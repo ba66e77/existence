@@ -1,0 +1,20 @@
+uuid: 4386e7ce-e096-40f3-9d62-c00ca63f4191
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - existence
+id: daily_log.field_daily_log_date
+field_name: field_daily_log_date
+entity_type: daily_log
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

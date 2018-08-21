@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.daily_log.daily_log.field_daily_log_date
+    - field.field.daily_log.daily_log.field_daily_log_journal
+    - field.field.daily_log.daily_log.field_daily_log_rating
+    - field.field.daily_log.daily_log.field_tracking_tags
+  module:
+    - datetime
+    - existence
+    - options
+    - text
+id: daily_log.daily_log.default
+targetEntityType: daily_log
+bundle: daily_log
+mode: default
+content:
+  field_daily_log_date:
+    weight: 0
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_daily_log_journal:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_daily_log_rating:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_tracking_tags:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  name: true
+  user_id: true

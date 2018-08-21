@@ -1,0 +1,11 @@
+uuid: 7d4e45fe-bc3d-4d5e-a027-a2b878bbd8ec
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ezV4kNjXMvvAd1bE1pWmGBKULFGxWzmq6Qxr2DAIuz0
+name: 'Daily Log tags'
+vid: daily_log_tags
+description: 'A tag-based vocabulary for tracking attributes of Daily Log entries.'
+hierarchy: 0
+weight: 0

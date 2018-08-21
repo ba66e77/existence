@@ -1,0 +1,21 @@
+uuid: a97217dc-04bc-46be-8e72-27bd4434d172
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.daily_log.field_daily_log_rating
+  module:
+    - existence
+    - options
+id: daily_log.daily_log.field_daily_log_rating
+field_name: field_daily_log_rating
+entity_type: daily_log
+bundle: daily_log
+label: 'Daily log rating'
+description: 'How do you feel today?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

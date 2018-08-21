@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.daily_log.daily_log.field_daily_log_date
+    - field.field.daily_log.daily_log.field_daily_log_journal
+    - field.field.daily_log.daily_log.field_daily_log_rating
+    - field.field.daily_log.daily_log.field_tracking_tags
+  module:
+    - datetime
+    - existence
+    - text
+id: daily_log.daily_log.default
+targetEntityType: daily_log
+bundle: daily_log
+mode: default
+content:
+  field_daily_log_date:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_daily_log_journal:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_daily_log_rating:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_tracking_tags:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  name: true
+  user_id: true

@@ -1,0 +1,30 @@
+uuid: 9cb71dac-fc00-41e2-bf66-b7c96e21a9c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.daily_log.field_tracking_tags
+    - taxonomy.vocabulary.daily_log_tags
+  module:
+    - existence
+id: daily_log.daily_log.field_tracking_tags
+field_name: field_tracking_tags
+entity_type: daily_log
+bundle: daily_log
+label: 'Tracking tags'
+description: 'What tags would you like to track for today?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      daily_log_tags: daily_log_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
