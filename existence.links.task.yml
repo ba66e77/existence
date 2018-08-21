@@ -1,0 +1,27 @@
+# Daily log routing definition
+daily_log.settings_tab:
+  route_name: daily_log.settings
+  title: 'Settings'
+  base_route: daily_log.settings
+
+entity.daily_log.canonical:
+  route_name: entity.daily_log.canonical
+  base_route: entity.daily_log.canonical
+  title: 'View'
+
+entity.daily_log.edit_form:
+  route_name: entity.daily_log.edit_form
+  base_route: entity.daily_log.canonical
+  title: 'Edit'
+
+entity.daily_log.version_history:
+  route_name: entity.daily_log.version_history
+  base_route: entity.daily_log.canonical
+  title: 'Revisions'
+
+entity.daily_log.delete_form:
+  route_name:  entity.daily_log.delete_form
+  base_route:  entity.daily_log.canonical
+  title: Delete
+  weight: 10
+

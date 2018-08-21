@@ -1,0 +1,14 @@
+
+# Daily log menu items definition
+entity.daily_log.collection:
+  title: 'Daily log list'
+  route_name: entity.daily_log.collection
+  description: 'List Daily log entities'
+  parent: system.admin_structure
+  weight: 100
+
+daily_log.admin.structure.settings:
+  title: 'Daily log settings'
+  description: 'Configure Daily log entities'
+  route_name: daily_log.settings
+  parent: system.admin_structure

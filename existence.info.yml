@@ -1,0 +1,5 @@
+name: 'Existence'
+type: module
+description: 'A mood tracking module inspired by exist.io.'
+core: 8.x
+package: 'Custom'

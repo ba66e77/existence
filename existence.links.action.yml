@@ -1,0 +1,5 @@
+entity.daily_log.add_form:
+  route_name: entity.daily_log.add_form
+  title: 'Add Daily log'
+  appears_on:
+    - entity.daily_log.collection

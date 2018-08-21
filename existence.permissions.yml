@@ -1,0 +1,30 @@
+add daily log entities:
+  title: 'Create new Daily log entities'
+
+administer daily log entities:
+  title: 'Administer Daily log entities'
+  description: 'Allow to access the administration form to configure Daily log entities.'
+  restrict access: true
+
+delete daily log entities:
+  title: 'Delete Daily log entities'
+
+edit daily log entities:
+  title: 'Edit Daily log entities'
+
+view published daily log entities:
+  title: 'View published Daily log entities'
+
+view unpublished daily log entities:
+  title: 'View unpublished Daily log entities'
+
+view all daily log revisions:
+  title: 'View all Daily log revisions'
+
+revert all daily log revisions:
+  title: 'Revert all Daily log revisions'
+  description: 'Role requires permission <em>view Daily log revisions</em> and <em>edit rights</em> for daily log entities in question or <em>administer daily log entities</em>.'
+
+delete all daily log revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Daily log revisions</em> and <em>delete rights</em> for daily log entities in question or <em>administer daily log entities</em>.'

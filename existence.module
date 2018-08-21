@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains existence.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function existence_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the existence module.
+    case 'help.page.existence':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A mood tracking module inspired by exist.io.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function existence_theme() {
+  return [
+    'existence' => [
+      'render element' => 'children',
+    ],
+  ];
+}
